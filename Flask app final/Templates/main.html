@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>Movies Recommendation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body style="background-color:gold;">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header>
+   <!--<a href="/index.html">-->
+   <a href="https://imgbb.com/"><img src="https://i.ibb.co/mtGLxg0/movienext.jpg" alt="movienext" border="0"></a>
+   
+</header>
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="w3-xlarge">  <b>MovieNext</b></h1>
+  <h2 class="w3-xlarge">  <b>WHAT SHOULD I WATCH NEXT?</b></h1>
+
+  
+  <div class="w3-padding-32">
+    <form method = "POST">
+            <label><b> Which Movie did you like? </b></label>
+            <input type = "text" name = "feature 1" id = "feature_1">
+  
+            <br>
+            <br>
+            <br>
+            <input style="border:2px solid DodgerBlue;" type = "submit" value = "Let's Watch Another One!">
+            
+    </form>
+     
+
+  
+         {% for result in results %} 
+        
+    <h3 style="border:2px solid DodgerBlue;"> {{result}} </h3>
+        
+         {% endfor %}
+       
+    </div>
+
+    
+  </div>
+</header>
+
+<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+  <div class="w3-half">
+    <img src="https://www.cinefacts.it/foto/h!dogtooth-header-cinefacts_cover.jpg" style="width:100%">
+    
+    <img src="https://www.sentieridelcinema.it/wp-content/uploads/2016/03/DcJUIe16k8pU99bmF8QKDafkKqSrDmtG33Rr.jpg" style="width:50%"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/la-vita-e-bella-1611594369.jpg?resize=640:*" style="width:50%">
+    
+  </div>
+
+  <div class="w3-half">
+    <img src="http://www.i400calci.com/wp-content/uploads/2019/09/jason-wray-hollywood-a3-artwork-midres-550x389.jpg" style="width:100%"> <img src="https://eosblog.altervista.org/wp-content/uploads/2015/03/ParisTexas_poster-225x300.jpg" style="width:50%"><img src="https://image.posterlounge.it/images/l/1896119.jpg" style="width:50%">
+    
+    
+  </div>
+</div>
+
+ 
+</body>  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  
+  <p>Powered by Andrea Marino</p>
+</footer>
+
+</body>
+</html>
